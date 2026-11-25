@@ -9,7 +9,8 @@ them the note count and length):
 
 A file is a map in Sound Space's format: `audio id,x|y|ms,x|y|ms,...`
 (x and y from 0 to 2, across and down the grid; ms is when the note is hit).
-The audio id at the start is the Roblox audio the place plays for the map.
+The audio id at the start is the Roblox audio the place plays for the map
+(`0`: no song yet; the map plays without music until the 0 is replaced).
 
 To add a map: put its file in `maps/`, then add a block for it in the place's
 `Maps` module with its details and `url = BASE .. "<file>.txt"`.
